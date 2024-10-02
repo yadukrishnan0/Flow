@@ -1,6 +1,6 @@
 const axios =require("axios");
 const{ createAuthorizationHeader } =require("./cryptic.js");
-
+const {isoTimestamp} =require('./unique.js')
 const dotenv= require("dotenv");
 dotenv.config();
 const makeSearchRequest = async () => {
@@ -15,7 +15,7 @@ const makeSearchRequest = async () => {
       "bap_uri": "https://ondc.eatiko.com/PREPROD",
       "transaction_id": "7785b5fb-c937-4ec3-90c9-c27c9c49908f",
       "message_id": "843e0c9f-2ef2-49ff-bb54-0d82c31cd957",
-      "timestamp":timestamp,
+      "timestamp":isoTimestamp,
       "ttl": "PT30S"
     },
     "message": {
