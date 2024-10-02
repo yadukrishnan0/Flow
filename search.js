@@ -1,12 +1,12 @@
 const axios =require("axios");
 const{ createAuthorizationHeader } =require("./cryptic.js");
-
+const {isoTimestamp}=require('./unique.js')
 const dotenv= require("dotenv");
 dotenv.config();
 const makeSearchRequest = async () => {
  const requestPayload={
     "context": {
-      "domain": "ONDC:RET11",
+      "domain": "ONDC:RET12",
       "action": "search",
       "country": "IND",
       "city": "std:080",
