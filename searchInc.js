@@ -11,7 +11,7 @@ const makeSearchRequest = async () => {
           "domain": "ONDC:RET12",
           "action": "search",
           "country": "IND",
-          "city": "std:80",
+          "city":"std:080",
           "core_version": "1.2.0",
           "bap_id": "ondc.eatiko.com",
           "bap_uri":"https://ondc.eatiko.com/PREPROD",
